@@ -20,4 +20,4 @@ def solve_check(odds, equals):
         return False
 
 eel.init('web')
-eel.start('linalg.html', mode="chrome")
+eel.start('linalg.html', mode="chrome", size=(900, 780))
