@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <title>System of linear equations</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+    </style>
+</head>
+<body>
+  <div class="content" id="main">
+    <div class="heading">
+      <h1>Решение системы линейных уравнений с помощью <a class="python" href="https://www.python.org/" target="_blank">Python</a> <a class="numpy" href="https://numpy.org/" target="_blank">NumPy</a></h1>
+    </div>
+    <div class="select-size">
+      <select id="system_size" class="form-select" aria-label="Default select example">
+        <option value="3" selected="">Количество неизвестных</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+    <div class="main-row">
+      <div class="brackets">
+        <img src="./img/brackets.svg" class="bracket" alt="">
+        <img src="./img/brackets.svg" class="bracket" alt="">
+      </div>
+      <div class="lin" id="linalg">
+          <div class="lin-value" id="values">
+          </div>
+          <div class="lin-solution" id="solutions">
+          </div>
+      </div>
+    </div>
+    <div class="bottom-btn">
+          <button type="button" class="button-85 btn btn-hover" role="button" id="solve_btn">Решить систему уравнений</button>
+      </div>
+  </div>  
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
