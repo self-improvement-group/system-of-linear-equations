@@ -8,7 +8,8 @@ def solve_lg(odds, equals):
     try:
         solution = np.linalg.solve(odds, equals)
         return solution.tolist()
-    except:
+    except Exception as err:
+        print(err)
         pass
 
 @eel.expose
