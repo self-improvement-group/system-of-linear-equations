@@ -18,7 +18,7 @@ async function solve_system (){
             if (input_value.value == null){
                 input_value.value = 0;
             }
-            list_x.push(parseFloat(input_value.value).toFixed(2))
+            list_x.push(parseFloat(input_value.value))
 
         }
     list_of_x.push(list_x);
@@ -47,7 +47,7 @@ async function solve_system (){
         let answer_list = document.getElementsByClassName("answer-rd");
     
         for (let i = 0; i < answer_list.length; i++) {
-            answer_list[i].value = system_roots.shift();
+            answer_list[i].value = system_roots.shift().toFixed(2);
         }
     }
     //если нет exception и в документе есть элемент ошибки, то удаляем ошибку и записываем корни
@@ -60,7 +60,7 @@ async function solve_system (){
         let answer_list = document.getElementsByClassName("answer-rd");
     
         for (let i = 0; i < answer_list.length; i++) {
-            answer_list[i].value = system_roots.shift();
+            answer_list[i].value = system_roots.shift().toFixed(2);
         }
     }
 }
